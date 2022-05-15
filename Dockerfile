@@ -4,7 +4,8 @@ WORKDIR /app
 
 ARG PAT
 
-RUN chmod 777 /app && \
+RUN echo "CommitHash: 1eecd182af6d7f54f8759c0c69ba7587710963d7" && \
+    chmod 777 /app && \
     apt-get -y update && \
     DEBIAN_FRONTEND="noninteractive" apt-get -y install git gcc python3-dev && \
     rm -rf /var/lib/apt/lists/* && \
