@@ -4,7 +4,8 @@ WORKDIR /app
 
 ARG PAT
 
-RUN chmod 777 /app && \
+RUN echo "CommitHash: f222854779bd0967772fe904f1c78f462e3fec97" && \
+    chmod 777 /app && \
     apt-get -qq update -y && \
     DEBIAN_FRONTEND="noninteractive" apt-get -qq install -y \
     --no-install-recommends -o Dpkg::Use-Pty=0 \
