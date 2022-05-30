@@ -4,7 +4,7 @@ WORKDIR /app
 
 ARG PAT
 
-RUN echo "CommitHash: cf7aecc2cbcc2758f62a8ea4a4b4facb0faa6452 - Deploy #1" && \
+RUN echo "CommitHash: 8e3615fe045876df284da507549f74ef5e7b619c - Deploy #1" && \
     chmod 777 /app && \
     apt-get -qq update -y && \
     DEBIAN_FRONTEND="noninteractive" apt-get -qq install -y \
